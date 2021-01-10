@@ -12,3 +12,4 @@ sudo apt install azure-cli
 
 az extension list-available --output table
 az extension add --name aks-preview
+

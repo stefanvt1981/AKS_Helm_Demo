@@ -19,7 +19,8 @@ az aks create \
     --windows-admin-password $PASSWORD_WIN \
     --windows-admin-username azureuser \
     --vm-set-type VirtualMachineScaleSets \
-    --network-plugin azure
+    --network-plugin azure \
+    
 
 read -p "Press enter to continue"
 
