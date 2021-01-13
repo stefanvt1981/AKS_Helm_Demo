@@ -11,15 +11,16 @@ echo "\n\nMaak aks cluster met 2 nodes: \n"
 PASSWORD_WIN="StefanStefanStefan2020!"
 
 az aks create \
-    --resource-group aks_helm_demo \
+    --resource-group aks_helm_demo_v2 \
     --name myAKSCluster \
     --node-count 2 \
     --enable-addons monitoring \
-    --generate-ssh-keys \
+    --generate-ssh-keys 
+    \
     --windows-admin-password $PASSWORD_WIN \
     --windows-admin-username azureuser \
     --vm-set-type VirtualMachineScaleSets \
-    --network-plugin azure \
+    #--network-plugin azure \
     
 
 read -p "Press enter to continue"
