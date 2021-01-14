@@ -30,7 +30,7 @@ az aks create \
     --windows-admin-password $PASSWORD_WIN \
     --windows-admin-username azureuser \
     --vm-set-type VirtualMachineScaleSets \
-    #--network-plugin azure \
+    --network-plugin azure \
     
 
 read -p "Press enter to continue"
@@ -38,7 +38,7 @@ read -p "Press enter to continue"
 echo "\n\nVoeg een windows cluster toe: \n"
 
 az aks nodepool add \
-    --resource-group aks_helm_demo \
+    --resource-group aks_helm_demo_v2 \
     --cluster-name myAKSCluster \
     --os-type Windows \
     --name npwin \
