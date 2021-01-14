@@ -3,9 +3,9 @@ entries:
   azure-vote-back:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-01-14T15:16:03.235733+01:00"
-    description: A Helm chart for Kubernetes
-    digest: ae9dc643c1b8e0001c48095f8c57799a8cc5f5038d6158fd17fc1c1ab5721f54
+    created: "2021-01-14T15:32:15.4903905+01:00"
+    description: Redis backend voor azure voting app
+    digest: 81f03f998905188f6081f795f1f3539c8e04fa4010089c9430eb2e496a2afd6a
     name: azure-vote-back
     type: application
     urls:
@@ -14,16 +14,16 @@ entries:
   azure-vote-front:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-01-14T15:16:03.2366239+01:00"
+    created: "2021-01-14T15:32:15.4913015+01:00"
     dependencies:
     - name: azure-vote-back
       repository: https://stefanvt1981.github.io/AKS_Helm_Demo/myrepo/
       version: 0.1.0
-    description: A Helm chart for Kubernetes
-    digest: a3e49855736f3fd421249fface684670e53d53a361bd4989846a9f42912db36b
+    description: Python flask frontend voor azure voting app
+    digest: 1a309756780a9f0168f58f8b115f9250cb309198f0d4cca957b315bd59d83bff
     name: azure-vote-front
     type: application
     urls:
     - azure-vote-front-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-14T15:16:03.2349829+01:00"
+generated: "2021-01-14T15:32:15.4876624+01:00"
