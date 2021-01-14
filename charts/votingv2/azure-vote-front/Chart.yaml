@@ -1,6 +1,6 @@
 apiVersion: v2
 name: azure-vote-front
-description: A Helm chart for Kubernetes
+description: Python flask frontend voor azure voting app
 
 # A chart can be either an 'application' or a 'library' chart.
 #
